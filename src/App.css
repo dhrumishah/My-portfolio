@@ -92,6 +92,7 @@ li:hover {
 .about--btn:hover {
   background-color: transparent;
   border: 3px solid #c96ce3;
+  cursor: pointer;
 }
 .about--profileImage {
   margin-left: 10rem;
@@ -152,3 +153,41 @@ li:hover {
 }
 
 /* Projects */
+.project--container {
+  display: flex;
+}
+.project--img {
+  height: 400px;
+  width: 800px;
+  background-size: cover;
+  background-image: url(Project-1.jpg);
+  margin-left: 5rem;
+  border-radius: 10px;
+}
+.project--overlay {
+  height: 400px;
+  width: 800px;
+  border-radius: 10px;
+  background-color: rgba(201, 108, 227, 0.5);
+}
+.project--overlay:hover {
+  cursor: pointer;
+  background-color: transparent;
+}
+
+.desc--title {
+  color: #c96ce3;
+  margin-left: 16rem;
+  margin-bottom: 1rem;
+  margin-top: 3rem;
+  font-size: 2em;
+}
+.desc--para {
+  margin-left: 2rem;
+  height: 100px;
+  width: 400px;
+  background-color: #343a40;
+  position: absolute;
+  padding-top: 10px;
+  border-radius: 10px;
+}
