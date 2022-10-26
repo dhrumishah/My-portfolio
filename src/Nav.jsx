@@ -2,8 +2,11 @@ import React from "react";
 import ReactDOM from "react-dom";
 import "./App.css";
 import Logo from "./Logo.svg";
+import { useNavigate } from "react-router-dom";
 
 export default function Nav() {
+  const navigate = useNavigate("/About");
+
   return (
     <div>
       <div className="nav">
@@ -16,8 +19,22 @@ export default function Nav() {
         </div>
         <div className="div--content">
           <ul className="nav--ul">
-            <li className="nav--li">About</li>
-            <li className="nav--li">Projects</li>
+            <li
+              className="nav--li"
+              onClick={() => {
+                navigate("/Intro");
+              }}
+            >
+              About
+            </li>
+            <li
+              className="nav--li"
+              onClick={() => {
+                navigate("/Project");
+              }}
+            >
+              Projects
+            </li>
             <li className="nav--li">Blog</li>
             <li className="nav--li">Contact</li>
           </ul>
