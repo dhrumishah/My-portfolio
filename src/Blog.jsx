@@ -84,7 +84,7 @@ export default function Blog() {
         <img
           className="right--arrows"
           onClick={() => {
-            navigate("/Blog");
+            navigate("/Contact");
           }}
           src={RightArrows}
         ></img>
