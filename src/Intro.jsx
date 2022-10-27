@@ -13,10 +13,10 @@ export default function Intro() {
       <div className="intro--div">
         <h1 className="intro--title">Readme.md</h1>
         <div className="intro--section">
-          <div className="intro--gif">
+          <div className="intro--gif animate__animated animate__slideInLeft">
             <img src={gif} />
           </div>
-          <div className="intro--content">
+          <div className="intro--content animate__animated animate__fadeInDown">
             <p className="intro--para">
               I am a frontend developer who loves to play with JavaScript and
               React. I love playing with CSS, but, hate it when it starts

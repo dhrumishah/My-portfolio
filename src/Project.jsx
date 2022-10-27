@@ -102,7 +102,7 @@ export default function Project() {
         <img
           className="right--arrows"
           onClick={() => {
-            navigate("/Project");
+            navigate("/Blog");
           }}
           src={RightArrows}
         ></img>

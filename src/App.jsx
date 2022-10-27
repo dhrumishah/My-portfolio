@@ -6,6 +6,7 @@ import Nav from "./Nav";
 import About from "./About";
 import Intro from "./Intro";
 import Project from "./Project";
+import Blog from "./Blog";
 
 export default function App() {
   return (
@@ -15,6 +16,7 @@ export default function App() {
           <Route path="/" element={<About />} />
           <Route path="/Intro" element={<Intro />} />
           <Route path="/Project" element={<Project />} />
+          <Route path="/Blog" element={<Blog />} />
         </Routes>
       </Router>
     </div>

@@ -35,7 +35,14 @@ export default function Nav() {
             >
               Projects
             </li>
-            <li className="nav--li">Blog</li>
+            <li
+              className="nav--li"
+              onClick={() => {
+                navigate("/Blog");
+              }}
+            >
+              Blog
+            </li>
             <li className="nav--li">Contact</li>
           </ul>
         </div>
