@@ -325,10 +325,19 @@ li:hover {
 .contact--links a {
   text-decoration: none;
   color: #b9fbc0;
-  font-size: 1.5em;
+  font-size: 1em;
 }
 .contact--links a:hover {
   text-decoration: 3px solid underline #c96ce3;
+}
+.contact--para {
+  height: 100px;
+  width: 600px;
+  align-items: center;
+  justify-content: center;
+  margin: auto;
+  font-size: 1.2em;
+  text-align: left;
 }
 .contact--socials {
   margin-top: 2rem;
@@ -342,13 +351,14 @@ li:hover {
   cursor: pointer;
 }
 .footer-container {
-  margin-top: 10rem;
+  margin-top: 3rem;
   background-color: #343a40;
-  height: 7.5rem;
+  height: 11rem;
   padding: 20px;
 }
 .footer-container p {
   font-weight: 700;
   font-family: monospace;
   font-size: 1.5em;
+  margin-top: 2rem;
 }
