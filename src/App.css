@@ -410,7 +410,8 @@ li:hover {
     width: 100px;
     margin-left: 3rem;
   }
-  .intro--title {
+  .intro--title,
+  .project--title {
     font-size: 4em;
   }
   .intro--content {
