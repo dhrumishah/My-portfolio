@@ -366,7 +366,7 @@ li:hover {
 @media only screen and (max-width: 768px) {
   .about--arrows {
     margin-top: 30rem;
-    margin-left: 22rem;
+    margin-left: 18rem;
   }
   .nav {
     max-width: 768px;
@@ -376,7 +376,7 @@ li:hover {
     margin-left: 4rem;
   }
   .div--content {
-    margin-left: 150px;
+    margin-left: 70px;
   }
   .nav--li {
     margin-left: 1.5rem;
@@ -386,9 +386,9 @@ li:hover {
     flex-direction: column-reverse;
   }
   .about--heading {
-    margin-left: 5rem;
+    margin-left: 4rem;
     height: 100px;
-    width: 500px;
+    width: 400px;
   }
   .about--title {
     font-size: 3em;
@@ -400,5 +400,6 @@ li:hover {
   .about--profileImage {
     height: 300px;
     width: 300px;
+    margin-left: 8rem;
   }
 }
