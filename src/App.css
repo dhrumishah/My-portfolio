@@ -362,3 +362,43 @@ li:hover {
   font-size: 1.5em;
   margin-top: 2rem;
 }
+/* NavBar Section  */
+@media only screen and (max-width: 768px) {
+  .about--arrows {
+    margin-top: 30rem;
+    margin-left: 22rem;
+  }
+  .nav {
+    max-width: 768px;
+    background-color: transparent;
+  }
+  .div--logo {
+    margin-left: 4rem;
+  }
+  .div--content {
+    margin-left: 200px;
+  }
+  .nav--li {
+    margin-left: 1.5rem;
+  }
+  .about--section {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+  .about--heading {
+    margin-left: 5rem;
+    height: 100px;
+    width: 500px;
+  }
+  .about--title {
+    font-size: 3em;
+    margin-top: 5rem;
+  }
+  .about--content {
+    font-size: 1.5em;
+  }
+  .about--profileImage {
+    height: 300px;
+    width: 300px;
+  }
+}
