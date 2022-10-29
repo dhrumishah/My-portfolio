@@ -408,7 +408,7 @@ li:hover {
   .intro--gif {
     height: 100px;
     width: 100px;
-    margin-left: 2rem;
+    margin-left: 3rem;
   }
   .intro--title {
     font-size: 4em;
@@ -416,6 +416,6 @@ li:hover {
   .intro--content {
     margin-left: 4rem;
     margin-right: 2rem;
-    margin-top: 25rem;
+    margin-top: 20rem;
   }
 }

@@ -1,7 +1,7 @@
 import React from "react";
 import ReactDOM from "react-dom";
 import "./App.css";
-import gif from "./svg_1.gif";
+import gif from "./svg_2.gif";
 import RightArrows from "./images/right-arrow.svg";
 import LeftArrows from "./images/left-arrow.svg";
 import { useNavigate } from "react-router-dom";
