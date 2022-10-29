@@ -365,10 +365,7 @@ li:hover {
 
 @media only screen and (max-width: 768px) {
   /* HOME PAGE */
-  .about--arrows {
-    margin-top: 25rem;
-    margin-left: 15rem;
-  }
+
   .nav {
     max-width: 768px;
     background-color: transparent;
@@ -414,7 +411,7 @@ li:hover {
     margin-left: 2rem;
   }
   .intro--title {
-    font-size: 5em;
+    font-size: 4em;
   }
   .intro--content {
     margin-left: 4rem;

@@ -48,7 +48,7 @@ export default function About() {
             />
           </div>
         </div>
-        <div className="about--arrows">
+        {/* <div className="about--arrows">
           <img
             className="left--arrows"
             style={{ cursor: "not-allowed" }}
@@ -61,7 +61,7 @@ export default function About() {
             }}
             src={RightArrows}
           ></img>
-        </div>
+        </div> */}
       </div>
     </>
   );
