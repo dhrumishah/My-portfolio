@@ -362,11 +362,12 @@ li:hover {
   font-size: 1.5em;
   margin-top: 2rem;
 }
-/* NavBar Section  */
+
 @media only screen and (max-width: 768px) {
+  /* HOME PAGE */
   .about--arrows {
-    margin-top: 30rem;
-    margin-left: 18rem;
+    margin-top: 25rem;
+    margin-left: 15rem;
   }
   .nav {
     max-width: 768px;
@@ -401,5 +402,23 @@ li:hover {
     height: 300px;
     width: 300px;
     margin-left: 8rem;
+  }
+  /* INTRO PAGE */
+  .intro--section {
+    display: flex;
+    flex-direction: column;
+  }
+  .intro--gif {
+    height: 100px;
+    width: 100px;
+    margin-left: 2rem;
+  }
+  .intro--title {
+    font-size: 5em;
+  }
+  .intro--content {
+    margin-left: 4rem;
+    margin-right: 2rem;
+    margin-top: 25rem;
   }
 }
