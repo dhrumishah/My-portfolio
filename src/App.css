@@ -425,9 +425,12 @@ li:hover {
     flex-direction: column;
     margin-bottom: 3rem;
   }
-
+  .blog--image {
+    margin-left: 2rem;
+    margin-right: 2rem;
+  }
   .blog--writing {
-    margin-left: 5rem;
+    margin-left: 3rem;
     margin-bottom: 5rem;
     height: 200px;
     width: 600px;
