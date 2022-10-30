@@ -436,4 +436,22 @@ li:hover {
     width: 600px;
     text-align: left;
   }
+  /* Contact */
+  .contact--title {
+    font-size: 2em;
+  }
+  .contact--para {
+    height: 200px;
+    width: 300px;
+    font-size: 1em;
+  }
+  .contact--links {
+    margin-top: 2rem;
+  }
+  .footer-container {
+    height: 7.5rem;
+  }
+  .footer-container p {
+    font-size: 1em;
+  }
 }
