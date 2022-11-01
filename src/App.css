@@ -80,13 +80,28 @@ li:hover {
   cursor: pointer;
 }
 
-/* About Section */
 .about--section {
-  margin-top: 9rem;
-  margin-left: 2rem;
-  display: flex;
-  margin-bottom: 5rem;
+  text-align: left;
 }
+.about--section h1 {
+  font-size: 2rem;
+}
+
+/* About Section */
+.about-container {
+  max-width: 100vw;
+  height: 90vh;
+  align-items: center;
+  display: flex;
+  justify-content: space-around;
+}
+.about--section {
+  width: 100%;
+  padding: 5vw;
+  display: flex;
+  justify-content: space-between;
+}
+
 .about--title {
   font-family: monospace;
   font-size: 3.5em;
@@ -118,7 +133,7 @@ li:hover {
   cursor: pointer;
 }
 .about--profileImage {
-  margin-left: 10rem;
+  /* margin-left: 10rem; */
   border-radius: 200px;
   box-shadow: inset 0 0 50px #fff, inset 20px 0 80px #f0f,
     inset -20px 0 80px #0ff, inset 20px 0 300px #f0f, inset -20px 0 300px #0ff,
@@ -280,7 +295,7 @@ li:hover {
   cursor: pointer;
 }
 /* Blogs page */
-.blog--section{
+.blog--section {
   margin-top: 2em;
 }
 .blog-container {
