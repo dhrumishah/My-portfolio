@@ -1,16 +1,7 @@
 import React from "react";
-import ReactDOM from "react-dom";
-import "./App.css";
-import Nav from "./Nav";
-import Blog_1 from "./images/blog-1.jpg";
-import Blog_2 from "./images/blog-2.jpg";
-import Blog_3 from "./images/blog-3.jpg";
-import RightArrows from "./images/right-arrow.svg";
-import LeftArrows from "./images/left-arrow.svg";
-import { useNavigate } from "react-router-dom";
+import { Link } from "react-router-dom";
 
 export default function Blog() {
-  const navigate = useNavigate();
   function readMore() {
     window.open("https://dhrumishah.hashnode.dev/javascript-functions");
   }
@@ -24,12 +15,11 @@ export default function Blog() {
   }
   return (
     <>
-      <Nav />
       <div className="blog--section">
         <h1 className="blog--title">My writings</h1>
         <div className="blog-container">
           <div className="blog--image">
-            <img src={Blog_1} className="blog-1--image"></img>
+            <img src={"/images/blog-1.jpg"} className="blog-1--image"></img>
           </div>
           <div className="blog--writing">
             <h2 className="blog--title">JavaScript Functions</h2>
@@ -47,7 +37,7 @@ export default function Blog() {
         </div>
         <div className="blog-container">
           <div className="blog--image">
-            <img src={Blog_2} className="blog-1--image"></img>
+            <img src={"/images/blog-2.jpg"} className="blog-1--image"></img>
           </div>
           <div className="blog--writing">
             <h2 className="blog--title">
@@ -66,7 +56,7 @@ export default function Blog() {
         </div>
         <div className="blog-container">
           <div className="blog--image">
-            <img src={Blog_3} className="blog-1--image"></img>
+            <img src={"/images/blog-3.jpg"} className="blog-1--image"></img>
           </div>
           <div className="blog--writing">
             <h2 className="blog--title">JavaScript Data Types</h2>
@@ -80,20 +70,12 @@ export default function Blog() {
           </div>
         </div>
         <div className="about--arrows">
-          <img
-            className="left--arrows"
-            onClick={() => {
-              navigate("/Project");
-            }}
-            src={LeftArrows}
-          ></img>
-          <img
-            className="right--arrows"
-            onClick={() => {
-              navigate("/Contact");
-            }}
-            src={RightArrows}
-          ></img>
+          <Link to="/">
+            <img className="left--arrows" src={"/images/left-arrow.svg"} />
+          </Link>
+          <Link to="/Project">
+            <img className="right--arrows" src={"/images/right-arrow.svg"} />
+          </Link>
         </div>
       </div>
     </>

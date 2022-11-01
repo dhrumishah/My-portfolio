@@ -1,14 +1,7 @@
 import React from "react";
-import ReactDOM from "react-dom";
-import "./App.css";
-import Profile from "./profile.jpg";
-import Nav from "./Nav";
-import RightArrows from "./images/right-arrow.svg";
-import LeftArrows from "./images/left-arrow.svg";
-import { useNavigate } from "react-router-dom";
+// import Profile from "./profile.jpg";
 
 export default function About() {
-  const navigate = useNavigate();
   function btnClick() {
     window.open(
       "https://drive.google.com/file/d/1DuMenTRnlHX76hgLm5RHuIzB6vBX5165/view?usp=sharing"
@@ -16,7 +9,6 @@ export default function About() {
   }
   return (
     <>
-      <Nav />
       <div>
         <div className="about--section">
           <div className="about--heading">
@@ -43,7 +35,7 @@ export default function About() {
 
           <div className="about--profile">
             <img
-              src={Profile}
+              src={"/images/profile.jpg"}
               className="about--profileImage animate__animated animate__zoomIn animate__slow"
             />
           </div>
