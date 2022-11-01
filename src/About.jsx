@@ -17,7 +17,7 @@ export default function About() {
   return (
     <>
       <Nav />
-      <div>
+      <div className="about-container">
         <div className="about--section">
           <div className="about--heading">
             <h1 className="about--title animate__animated animate__fadeInLeft animate__slow">
