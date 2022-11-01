@@ -1,5 +1,5 @@
 import React from "react";
-import { Link } from "react-router-dom";
+import { Arrows } from "../components";
 
 export default function Project() {
   function notesAppClick() {
@@ -85,14 +85,7 @@ export default function Project() {
           </div>
         </div>
       </div>
-      <div className="about--arrows">
-        <Link to="/">
-          <img className="left--arrows" src={"/images/left-arrow.svg"} />
-        </Link>
-        <Link to="/Project">
-          <img className="right--arrows" src={"/images/right-arrow.svg"} />
-        </Link>
-      </div>
+      <Arrows prev="/" next="/Blog" />
     </>
   );
 }

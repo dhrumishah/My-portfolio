@@ -1,5 +1,4 @@
 import React from "react";
-// import Profile from "./profile.jpg";
 
 export default function About() {
   function btnClick() {
@@ -40,20 +39,6 @@ export default function About() {
             />
           </div>
         </div>
-        {/* <div className="about--arrows">
-          <img
-            className="left--arrows"
-            style={{ cursor: "not-allowed" }}
-            src={LeftArrows}
-          ></img>
-          <img
-            className="right--arrows"
-            onClick={() => {
-              navigate("/Intro");
-            }}
-            src={RightArrows}
-          ></img>
-        </div> */}
       </div>
     </>
   );

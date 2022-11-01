@@ -1,5 +1,5 @@
 import React from "react";
-import { Link } from "react-router-dom";
+import { Arrows } from "../components";
 
 export default function Blog() {
   function readMore() {
@@ -19,7 +19,10 @@ export default function Blog() {
         <h1 className="blog--title">My writings</h1>
         <div className="blog-container">
           <div className="blog--image">
-            <img src={"/images/blog-1.jpg"} className="blog-1--image"></img>
+            <img
+              src={"/images/blog/blog-1.jpg"}
+              className="blog-1--image"
+            ></img>
           </div>
           <div className="blog--writing">
             <h2 className="blog--title">JavaScript Functions</h2>
@@ -37,7 +40,10 @@ export default function Blog() {
         </div>
         <div className="blog-container">
           <div className="blog--image">
-            <img src={"/images/blog-2.jpg"} className="blog-1--image"></img>
+            <img
+              src={"/images/blog/blog-2.jpg"}
+              className="blog-1--image"
+            ></img>
           </div>
           <div className="blog--writing">
             <h2 className="blog--title">
@@ -56,7 +62,10 @@ export default function Blog() {
         </div>
         <div className="blog-container">
           <div className="blog--image">
-            <img src={"/images/blog-3.jpg"} className="blog-1--image"></img>
+            <img
+              src={"/images/blog/blog-3.jpg"}
+              className="blog-1--image"
+            ></img>
           </div>
           <div className="blog--writing">
             <h2 className="blog--title">JavaScript Data Types</h2>
@@ -69,14 +78,7 @@ export default function Blog() {
             </div>
           </div>
         </div>
-        <div className="about--arrows">
-          <Link to="/">
-            <img className="left--arrows" src={"/images/left-arrow.svg"} />
-          </Link>
-          <Link to="/Project">
-            <img className="right--arrows" src={"/images/right-arrow.svg"} />
-          </Link>
-        </div>
+        <Arrows prev="/Project" next="/Contact" />
       </div>
     </>
   );

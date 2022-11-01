@@ -179,7 +179,7 @@ li:hover {
   height: 400px;
   width: 800px;
   background-size: cover;
-  background-image: url(./images/Project-1.jpg);
+  background-image: url(/images/project/Project-1.jpg);
   margin-left: 5rem;
   border-radius: 10px;
 }
@@ -187,13 +187,13 @@ li:hover {
   margin-left: 1rem;
   border-radius: 10px;
   background-size: cover;
-  background-image: url(./images/project-2.jpg);
+  background-image: url(/images/project/project-2.jpg);
 }
 .project--img-3 {
   height: 400px;
   width: 800px;
   background-size: cover;
-  background-image: url(./images/Project-3.jpg);
+  background-image: url(/images/project/Project-3.jpg);
   margin-left: 5rem;
   border-radius: 10px;
 }
@@ -275,7 +275,7 @@ li:hover {
   cursor: pointer;
 }
 /* Blogs page */
-.blog--section{
+.blog--section {
   margin-top: 2em;
 }
 .blog-container {
