@@ -275,9 +275,12 @@ li:hover {
   cursor: pointer;
 }
 /* Blogs page */
+.blog--section{
+  margin-top: 2em;
+}
 .blog-container {
   display: flex;
-  margin-bottom: 3rem;
+  margin: 3rem;
 }
 .blog--image {
   margin-left: 5rem;

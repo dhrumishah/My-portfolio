@@ -25,7 +25,7 @@ export default function Blog() {
   return (
     <>
       <Nav />
-      <div>
+      <div className="blog--section">
         <h1 className="blog--title">My writings</h1>
         <div className="blog-container">
           <div className="blog--image">
