@@ -10,7 +10,7 @@ export default function About() {
     <div className="about--section container">
       <div className="about--heading">
         <h1 className="about--title animate__animated animate__fadeInLeft animate__slow">
-          Hi 👋, Dhrumi Shah.
+          Hi 👋, Dhrumi Shah
         </h1>
         <h2 className="about--content animate__animated animate__zoomInUp animate__slow">
           A Frontend Developer, Content creator & Technical Writer
