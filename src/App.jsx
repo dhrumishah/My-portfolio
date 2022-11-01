@@ -6,13 +6,13 @@ import { About, Blog, Contact, Intro, Project } from "./pages";
 
 export default function App() {
   return (
-    <div>
+    <div className="App">
       <Router>
-      <Navbar />
+        <Navbar />
         <Routes>
           <Route path="/" element={<About />} />
           <Route path="/Intro" element={<Intro />} />
-          <Route path="/Project" element={<Project />} />
+          <Route path="/Projects" element={<Project />} />
           <Route path="/Blog" element={<Blog />} />
           <Route path="/Contact" element={<Contact />} />
         </Routes>
