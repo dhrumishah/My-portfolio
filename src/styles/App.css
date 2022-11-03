@@ -8,6 +8,11 @@
   --bg-nav: #343a40;
   --primary: #c96ce3;
 }
+
+a {
+  text-decoration: none;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -71,6 +76,92 @@
   width: 70px;
   cursor: pointer;
 }
+
+/* NavBar Section  */
+.nav {
+  height: 80px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  max-width: auto;
+  background-color: #343a40;
+}
+.div--logo {
+  height: 80px;
+  width: 80px;
+  margin-left: 5.5rem;
+}
+.logo {
+  height: 80px;
+  width: 80px;
+}
+.div--content {
+  display: flex;
+  flex-direction: row;
+  margin-left: 600px;
+  padding-top: 10px;
+}
+.nav--ul {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.nav--li {
+  margin-left: 2.5rem;
+  font-size: 20px;
+  list-style: none;
+  font-weight: 600;
+}
+li:hover {
+  text-decoration: underline 3px solid #c96ce3;
+  cursor: pointer;
+}
+
+/* About Section */
+.about--section {
+  margin-top: 9rem;
+  margin-left: 2rem;
+  display: flex;
+  margin-bottom: 5rem;
+}
+.about--title {
+  font-family: monospace;
+  font-size: 3.5em;
+  color: #c96ce3;
+}
+
+.about--content {
+  margin-top: 1rem;
+  font-size: 2.5em;
+}
+.about--para {
+  margin-top: 1rem;
+}
+.about--btn {
+  -webkit-appearance: button;
+  -moz-appearance: button;
+  appearance: button;
+  margin-top: 3rem;
+  height: 3rem;
+  width: 10rem;
+  background-color: #c96ce3;
+  font-size: 1em;
+  border: none;
+  border-radius: 2px;
+}
+.about--btn:hover {
+  background-color: transparent;
+  border: 3px solid #c96ce3;
+  cursor: pointer;
+}
+.about--profileImage {
+  margin-left: 10rem;
+  border-radius: 200px;
+  box-shadow: inset 0 0 50px #fff, inset 20px 0 80px #f0f,
+    inset -20px 0 80px #0ff, inset 20px 0 300px #f0f, inset -20px 0 300px #0ff,
+    0 0 50px #fff, -10px 0 80px #f0f, 10px 0 80px #0ff;
+}
+
 /* Intro Section */
 .intro--div {
   margin-bottom: 5rem;
