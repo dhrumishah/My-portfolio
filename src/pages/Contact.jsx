@@ -1,11 +1,4 @@
 import React from "react";
-import ReactDOM from "react-dom";
-import "./App.css";
-import Nav from "./Nav";
-import Twitter from "./images/twitter.svg";
-import Hashnode from "./images/hashnode.svg";
-import Github from "./images/github.svg";
-import LinkedIn from "./images/linkedin.svg";
 
 export default function Contact() {
   function twtClick() {
@@ -23,7 +16,6 @@ export default function Contact() {
   }
   return (
     <>
-      <Nav />
       <div>
         <h1 className="contact--title">Looking to Collaborate? Let's Talk!</h1>
         <div className="contact--para animate__animated animate__zoomInLeft">
@@ -41,9 +33,11 @@ export default function Contact() {
               href="mailto:dhrumishah951@gmail.com"
               target="_blank"
               rel="noopener noreferrer"
-              class="jsx-8b75a9ccf5c40d44 mr-1 inline-flex items-center space-x-1 text-gray-300 transition duration-200 gradient-underline no-underline text-blue-400 hover:text-blue-300 text-blue-400 hover:!text-blue-300"
+              className="jsx-8b75a9ccf5c40d44 mr-1 inline-flex items-center space-x-1 text-gray-300 transition duration-200 gradient-underline no-underline text-blue-400 hover:text-blue-300 text-blue-400 hover:!text-blue-300"
             >
-              <span class="jsx-8b75a9ccf5c40d44">dhrumishah951@gmail.com</span>{" "}
+              <span className="jsx-8b75a9ccf5c40d44">
+                dhrumishah951@gmail.com
+              </span>{" "}
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 width="24"
@@ -51,10 +45,10 @@ export default function Contact() {
                 viewBox="0 0 24 24"
                 fill="none"
                 stroke="currentColor"
-                stroke-width="2"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                class="h-4 w-4"
+                strokeWidth="2"
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                className="h-4 w-4"
               >
                 <line x1="7" y1="17" x2="17" y2="7"></line>
                 <polyline points="7 7 17 7 17 17"></polyline>
@@ -63,25 +57,25 @@ export default function Contact() {
           </p>
           <div className="contact--socials">
             <img
-              src={Twitter}
+              src={"/images/social/twitter.svg"}
               onClick={twtClick}
               className="animate__animated animate__bounceInDown"
-            ></img>
+            />
             <img
-              src={Hashnode}
+              src={"/images/social/hashnode.svg"}
               onClick={hashClick}
               className="animate__animated animate__bounceInUp"
-            ></img>
+            />
             <img
-              src={Github}
+              src={"/images/social/github.svg"}
               onClick={gitClick}
               className="animate__animated animate__bounceInDown"
-            ></img>
+            />
             <img
-              src={LinkedIn}
+              src={"/images/social/linkedin.svg"}
               onClick={linkedClick}
               className="animate__animated animate__bounceInUp"
-            ></img>
+            />
           </div>
         </div>
         <div className="footer-container">
@@ -91,7 +85,7 @@ export default function Contact() {
                 <img
                   src="https://img.shields.io/twitter/follow/deetwts?label=Twitter&amp;logo=twitter&amp;style=for-the-badge"
                   alt="Twitter badge"
-                ></img>
+                />
               </a>
             </div>
             <div className="animate__animated animate__flash animate__infinite animate__slow">
@@ -99,7 +93,7 @@ export default function Contact() {
                 <img
                   src="https://img.shields.io/github/followers/dhrumishah?label=Followers&amp;logo=GitHub&amp;style=for-the-badge"
                   alt="GitHub badge"
-                ></img>
+                />
               </a>
             </div>
           </div>

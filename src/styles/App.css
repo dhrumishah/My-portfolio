@@ -3,8 +3,10 @@
   font-weight: 400;
 
   color-scheme: light dark;
-  color: rgba(255, 255, 255, 0.87);
-  background-color: #242424;
+  --color: rgba(255, 255, 255, 0.87);
+  --bg-color: #242424;
+  --bg-nav: #343a40;
+  --primary: #c96ce3;
 }
 * {
   margin: 0;
@@ -12,10 +14,45 @@
 }
 
 #root {
-  margin: 0 auto;
-  padding: 0;
   text-align: center;
 }
+/* Responsive Container that resize for secren size */
+.container {
+  width: 100%;
+}
+@media (min-width: 640px) {
+  .container {
+    max-width: 640px;
+  }
+}
+@media (min-width: 768px) {
+  .container {
+    max-width: 768px;
+  }
+}
+@media (min-width: 1024px) {
+  .container {
+    max-width: 1024px;
+  }
+}
+@media (min-width: 1280px) {
+  .container {
+    max-width: 1280px;
+  }
+}
+@media (min-width: 1536px) {
+  .container {
+    max-width: 1536px;
+  }
+}
+
+.App {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  height: 100%;
+}
+
 .about--arrows {
   display: flex;
   margin-right: 2rem;
@@ -34,92 +71,6 @@
   width: 70px;
   cursor: pointer;
 }
-
-/* NavBar Section  */
-.nav {
-  height: 80px;
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  max-width: auto;
-  background-color: #343a40;
-}
-.div--logo {
-  height: 80px;
-  width: 80px;
-  margin-left: 5.5rem;
-}
-.logo {
-  height: 80px;
-  width: 80px;
-}
-.div--content {
-  display: flex;
-  flex-direction: row;
-  margin-left: 600px;
-  padding-top: 10px;
-}
-.nav--ul {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-}
-.nav--li {
-  margin-left: 2.5rem;
-  font-size: 20px;
-  list-style: none;
-  font-weight: 600;
-}
-li:hover {
-  text-decoration: underline 3px solid #c96ce3;
-  cursor: pointer;
-}
-
-/* About Section */
-.about--section {
-  margin-top: 9rem;
-  margin-left: 2rem;
-  display: flex;
-  margin-bottom: 5rem;
-}
-.about--title {
-  font-family: monospace;
-  font-size: 3.5em;
-  color: #c96ce3;
-}
-
-.about--content {
-  margin-top: 1rem;
-  font-size: 2.5em;
-}
-.about--para {
-  margin-top: 1rem;
-}
-.about--btn {
-  -webkit-appearance: button;
-  -moz-appearance: button;
-  appearance: button;
-  margin-top: 3rem;
-  height: 3rem;
-  width: 10rem;
-  background-color: #c96ce3;
-  font-size: 1em;
-  border: none;
-  border-radius: 2px;
-}
-.about--btn:hover {
-  background-color: transparent;
-  border: 3px solid #c96ce3;
-  cursor: pointer;
-}
-.about--profileImage {
-  margin-left: 10rem;
-  border-radius: 200px;
-  box-shadow: inset 0 0 50px #fff, inset 20px 0 80px #f0f,
-    inset -20px 0 80px #0ff, inset 20px 0 300px #f0f, inset -20px 0 300px #0ff,
-    0 0 50px #fff, -10px 0 80px #f0f, 10px 0 80px #0ff;
-}
-
 /* Intro Section */
 .intro--div {
   margin-bottom: 5rem;
@@ -132,7 +83,7 @@ li:hover {
   font-family: monospace;
   padding-bottom: 3rem;
   font-size: 6em;
-  color: #c96ce3;
+  color: var(--primary);
 }
 .intro--gif {
   height: 400px;
@@ -179,7 +130,7 @@ li:hover {
   height: 400px;
   width: 800px;
   background-size: cover;
-  background-image: url(./images/Project-1.jpg);
+  background-image: url(/images/project/Project-1.jpg);
   margin-left: 5rem;
   border-radius: 10px;
 }
@@ -187,13 +138,13 @@ li:hover {
   margin-left: 1rem;
   border-radius: 10px;
   background-size: cover;
-  background-image: url(./images/project-2.jpg);
+  background-image: url(/images/project/project-2.jpg);
 }
 .project--img-3 {
   height: 400px;
   width: 800px;
   background-size: cover;
-  background-image: url(./images/Project-3.jpg);
+  background-image: url(/images/project/Project-3.jpg);
   margin-left: 5rem;
   border-radius: 10px;
 }
@@ -275,9 +226,12 @@ li:hover {
   cursor: pointer;
 }
 /* Blogs page */
+.blog--section {
+  margin-top: 2em;
+}
 .blog-container {
   display: flex;
-  margin-bottom: 3rem;
+  margin: 3rem;
 }
 .blog--image {
   margin-left: 5rem;
@@ -364,42 +318,6 @@ li:hover {
 }
 
 @media only screen and (max-width: 768px) {
-  /* HOME PAGE */
-
-  .nav {
-    max-width: 768px;
-    background-color: transparent;
-  }
-  .div--logo {
-    margin-left: 4rem;
-  }
-  .div--content {
-    margin-left: 70px;
-  }
-  .nav--li {
-    margin-left: 1.5rem;
-  }
-  .about--section {
-    display: flex;
-    flex-direction: column-reverse;
-  }
-  .about--heading {
-    margin-left: 4rem;
-    height: 100px;
-    width: 400px;
-  }
-  .about--title {
-    font-size: 3em;
-    margin-top: 5rem;
-  }
-  .about--content {
-    font-size: 1.5em;
-  }
-  .about--profileImage {
-    height: 300px;
-    width: 300px;
-    margin-left: 8rem;
-  }
   /* INTRO PAGE */
   .intro--section {
     display: flex;
