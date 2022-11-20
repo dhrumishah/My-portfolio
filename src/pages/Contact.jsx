@@ -1,4 +1,5 @@
 import React from "react";
+import Reveal from 'react-reveal/Reveal';
 
 export default function Contact() {
   function twtClick() {
@@ -18,14 +19,16 @@ export default function Contact() {
     <>
       <div>
         <h1 className="contact--title">Looking to Collaborate? Let's Talk!</h1>
-        <div className="contact--para animate__animated animate__zoomInLeft">
-          <p>
-            I enjoy working on React projects, and I can create a beautiful
-            React website for you. I'm eager to work on the frontend component
-            of it in partnership with a business or individual. Additionally,
-            I'm interested in freelancing. Let's discuss more!
-          </p>
-        </div>
+        <Reveal effect="animate__animated animate__zoomInLeft">
+          <div className="contact--para">
+            <p>
+              I enjoy working on React projects, and I can create a beautiful
+              React website for you. I'm eager to work on the frontend component
+              of it in partnership with a business or individual. Additionally,
+              I'm interested in freelancing. Let's discuss more!
+            </p>
+          </div>
+        </Reveal>
         <div className="contact--links">
           <p>
             Shoot me an email on{" "}
@@ -56,26 +59,30 @@ export default function Contact() {
             </a>
           </p>
           <div className="contact--socials">
-            <img
-              src={"/images/social/twitter.svg"}
-              onClick={twtClick}
-              className="animate__animated animate__bounceInDown"
-            />
-            <img
-              src={"/images/social/hashnode.svg"}
-              onClick={hashClick}
-              className="animate__animated animate__bounceInUp"
-            />
-            <img
-              src={"/images/social/github.svg"}
-              onClick={gitClick}
-              className="animate__animated animate__bounceInDown"
-            />
-            <img
-              src={"/images/social/linkedin.svg"}
-              onClick={linkedClick}
-              className="animate__animated animate__bounceInUp"
-            />
+            <Reveal effect="animate__animated animate__bounceInDown">
+              <img
+                src={"/images/social/twitter.svg"}
+                onClick={twtClick}
+              />
+            </Reveal>
+            <Reveal effect="animate__animated animate__bounceInUp">
+              <img
+                src={"/images/social/hashnode.svg"}
+                onClick={hashClick}
+              />
+            </Reveal>
+            <Reveal effect="animate__animated animate__bounceInDown">
+              <img
+                src={"/images/social/github.svg"}
+                onClick={gitClick}
+              />
+            </Reveal>
+            <Reveal effect="animate__animated animate__bounceInUp">
+              <img
+                src={"/images/social/linkedin.svg"}
+                onClick={linkedClick}
+              />
+            </Reveal>
           </div>
         </div>
         <div className="footer-container">

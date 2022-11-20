@@ -1,5 +1,4 @@
 import React from "react";
-import { Arrows } from "../components";
 
 export default function Project() {
   function notesAppClick() {
@@ -85,7 +84,6 @@ export default function Project() {
           </div>
         </div>
       </div>
-      <Arrows prev="/" next="/Blog" />
     </>
   );
 }

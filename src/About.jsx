@@ -16,7 +16,6 @@ export default function About() {
   }
   return (
     <>
-      <Nav />
       <div className="about-container">
         <div className="about--section">
           <div className="about--heading">
