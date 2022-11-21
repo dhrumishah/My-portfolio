@@ -10,9 +10,7 @@ import { useNavigate } from "react-router-dom";
 export default function About() {
   const navigate = useNavigate();
   function btnClick() {
-    window.open(
-      "https://drive.google.com/file/d/1DuMenTRnlHX76hgLm5RHuIzB6vBX5165/view?usp=sharing"
-    );
+    window.open("");
   }
   return (
     <>

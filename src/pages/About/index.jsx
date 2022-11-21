@@ -3,17 +3,18 @@ import "./index.css";
 export default function About() {
   function btnClick() {
     window.open(
-      "https://drive.google.com/file/d/1DuMenTRnlHX76hgLm5RHuIzB6vBX5165/view?usp=sharing"
+      "https://drive.google.com/file/d/1CQ8IY0OWF4EQpZnSF6hmc4hW3D49TIVZ/view?usp=share_link"
     );
   }
   return (
     <div className="about--section container">
       <div className="about--heading">
         <h1 className="about--title animate__animated animate__fadeInLeft animate__slow">
-          Hi 👋, I'm Dhrumi Shah
+          Hey, I'm Dhrumi Shah
         </h1>
         <h2 className="about--content animate__animated animate__zoomInUp animate__slow">
-          A Frontend Developer, Content creator & Technical Writer
+          A Frontend Developer ,<br /> Content creator
+          <br /> & Technical Writer
         </h2>
         <p className="about--para animate__animated animate__zoomInUp animate__slow">
           With the passion of contributing to open source projects.
